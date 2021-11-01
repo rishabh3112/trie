@@ -13,9 +13,9 @@ jobs:
     name: "Test - ${{ matrix.os }} - ${{ matrix.node-version }}"
     runs-on: ${{ matrix.os }}
     strategy:
-    matrix:
-      os: [ubuntu-latest]
-      node-version: [14.x]
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [14.x]
     steps:
       - uses: actions/checkout@master
 
