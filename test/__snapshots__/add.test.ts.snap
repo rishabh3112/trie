@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`add funtionality should add multiple data items into store 1`] = `
+Array [
+  Object {
+    "data": "https://twitter.com/_rishabh3112",
+    "id": "test#7",
+    "key": "twitter",
+  },
+  Object {
+    "data": "https://rishabhchawla.co",
+    "id": "test#14",
+    "key": "website",
+  },
+  Object {
+    "data": "https://read.cv/",
+    "id": "test#21",
+    "key": "read.cv",
+  },
+  Object {
+    "data": "https://hackerrank.com/rishabh3112",
+    "id": "test#31",
+    "key": "hackerrank",
+  },
+]
+`;
+
+exports[`add funtionality should add multiple data items into store 2`] = `
+Object {
+  "data": "https://hackerrank.com/rishabh3112",
+  "id": "test#31",
+  "key": "hackerrank",
+}
+`;
+
 exports[`add funtionality should add single data item into store 1`] = `
 Object {
   "data": "https://rishabhchawla.co",
