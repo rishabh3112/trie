@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "@swc/core": "^1.2.106",
+    "@swc/jest": "^0.2.5",
+    "@swc/register": "^0.1.7",
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "nodemon": "^2.0.14"
+  },
+  "name": "trie",
+  "description": "Trie implementation in Node JS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "mime-types": "^2.1.33"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishabh3112/trie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishabh3112/trie/issues"
+  },
+  "homepage": "https://github.com/rishabh3112/trie#readme"
+}
