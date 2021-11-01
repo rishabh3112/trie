@@ -99,7 +99,7 @@ class Trie<Data> {
     return Promise.resolve("Data deleted");
   };
 
-  at = (key: string): Result<Data> => {
+  at = async (key: string): Promise<Result<Data>> => {
     if (!this.keyToId[key] || !this.idToData[this.keyToId[key]]) {
       throw "Data doesn't exists";
     }
