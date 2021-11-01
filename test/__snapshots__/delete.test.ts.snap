@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`delete funtionality should delete single data item from store 1`] = `
+Object {
+  "data": "https://rishabhchawla.co",
+  "id": "test#7",
+  "key": "rishabh",
+}
+`;
+
+exports[`delete funtionality should delete single data item from store 2`] = `"Data doesn't exists"`;
+
+exports[`delete funtionality should throw error if item doesn't exists 1`] = `"Data doesn't exists"`;
