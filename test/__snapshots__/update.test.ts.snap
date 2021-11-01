@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`update funtionality should throw error if id doesn't exists 1`] = `"Data doesn't exists"`;
+
+exports[`update funtionality should update if key is same 1`] = `
+Object {
+  "data": Array [
+    "pickachu",
+    "chalizard",
+  ],
+  "id": "pokemon#11",
+  "key": "ash ketchum",
+}
+`;
+
+exports[`update funtionality should update the existing item 1`] = `
+Object {
+  "data": Array [
+    "pickachu",
+    "chalizard",
+  ],
+  "id": "pokemon#12",
+  "key": "ash ketchum",
+}
+`;
+
+exports[`update funtionality should update the existing item 2`] = `"Data doesn't exists"`;

@@ -67,7 +67,7 @@ class Trie<Data> {
     if (!this.idToData[id]) return Promise.reject("Data doesn't exists");
 
     if (key !== this.idToData[id].key) {
-      await this.delete(id);
+      await this.delete(this.idToData[id].key);
       await this.add(key, data);
       return "Data updated";
     }
