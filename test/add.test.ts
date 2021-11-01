@@ -26,4 +26,15 @@ describe("add funtionality", () => {
     expect(emptySearch).toMatchSnapshot();
     expect(hackerrank).toMatchSnapshot();
   });
+
+  it("should throw error if item exists already", async () => {
+    const store = new Store<string>("test");
+
+    await store.add("twitter", "https://twitter.com/_rishabh3112");
+    try {
+      await store.add("twitter", "https://twitter.com/");
+    } catch (err) {
+      expect(err).toMatchSnapshot();
+    }
+  });
 });

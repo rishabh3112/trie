@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search functionality should return empty if no items found for the name 1`] = `Array []`;
+
+exports[`search functionality should search item which exists in store 1`] = `
+Array [
+  Object {
+    "data": "karusuno",
+    "id": "store#6",
+    "key": "hinata",
+  },
+]
+`;
+
+exports[`search functionality should search item which exists in store 2`] = `
+Array [
+  Object {
+    "data": "karusuno",
+    "id": "store#14",
+    "key": "kageyama",
+  },
+]
+`;

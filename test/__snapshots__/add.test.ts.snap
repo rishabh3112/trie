@@ -40,3 +40,5 @@ Object {
   "key": "rishabh",
 }
 `;
+
+exports[`add funtionality should throw error if item exists already 1`] = `"Data with same key exists"`;
