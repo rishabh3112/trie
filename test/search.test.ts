@@ -24,4 +24,15 @@ describe("search functionality", () => {
 
     expect(daichi).toMatchSnapshot();
   });
+
+  it("should return limited items with limit is provided", async () => {
+    const store = new Store<string>();
+
+    await store.add("pickachu", "ash");
+    await store.add("pichu", "unknown");
+
+    const limitOne = await store.search("pic", 1);
+
+    expect(limitOne).toMatchSnapshot();
+  });
 });

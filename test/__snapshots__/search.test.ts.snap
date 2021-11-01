@@ -2,6 +2,16 @@
 
 exports[`search functionality should return empty if no items found for the name 1`] = `Array []`;
 
+exports[`search functionality should return limited items with limit is provided 1`] = `
+Array [
+  Object {
+    "data": "ash",
+    "id": "store#8",
+    "key": "pickachu",
+  },
+]
+`;
+
 exports[`search functionality should search item which exists in store 1`] = `
 Array [
   Object {
