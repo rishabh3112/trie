@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "swc src -d lib",
     "watch": "jest --watch"
   },

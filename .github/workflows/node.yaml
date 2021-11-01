@@ -1,0 +1,36 @@
+name: trie
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: "Test - ${{ matrix.os }} - ${{ matrix.node-version }}"
+    runs-on: ${{ matrix.os }}
+    strategy:
+    matrix:
+      os: [ubuntu-latest]
+      node-version: [14.x]
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Using Node v${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Dependences
+        run: npm install
+
+      - name: Run Tests with Coverage
+        run: npm run test
+
+      - name: Upload Coverage
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
