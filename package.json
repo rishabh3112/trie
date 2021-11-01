@@ -1,5 +1,5 @@
 {
-  "name": "trie",
+  "name": "@rishabh3112/trie",
   "description": "Trie implementation in Node JS",
   "version": "1.0.0",
   "main": "lib/index.js",
