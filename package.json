@@ -3,6 +3,7 @@
   "description": "Trie implementation in Node JS",
   "version": "0.0.0",
   "main": "lib/index.js",
+  "private": "false",
   "scripts": {
     "test": "jest --coverage",
     "build": "swc src -d lib",
